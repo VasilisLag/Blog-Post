@@ -1,0 +1,12 @@
+<%- include("partials/header"); -%>
+
+  <h1><%=post.title%></h1>
+  <p><%=post.content%></p>
+  <form action="/delete" method="post">
+    <input  type="submit" style="background-color: #0070bf;color: white;padding: 5px 20px;border-radius: 10px;border: none;" value="Delete">
+    <input type="hidden" name="id" value="<%= post._id %>">
+
+  </form>
+
+
+<%- include("partials/footer"); -%>
